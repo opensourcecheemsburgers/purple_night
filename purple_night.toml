@@ -1,0 +1,550 @@
+"diagnostic.error" = { underline = { style = "curl", color = "red-400" } }
+"diagnostic.warning" = { underline = { style = "curl", color = "yellow-400" } }
+"diagnostic.info" = { underline = { style = "curl", color = "blue-400" } }
+"diagnostic.hint" = { underline = { style = "curl", color = "teal-400" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+"diagnostic.deprecated" = { modifiers = ["crossed_out"] }
+"error" = { fg = "red-600" }
+"warning" = { fg = "yellow-400" }
+"info" = { fg = "blue-400" }
+"hint" = { fg = "teal-400" }
+
+"ui.background" = { bg = "base-900" } # "Default background"
+"ui.background.separator" = { fg = "base-700" } # "Picker separator below input line."
+"ui.bufferline" = "" # "Fallback for bufferline (see [`editor.bufferline`][e-sec])",
+"ui.bufferline.active" = "" # "Active buffer in bufferline (see [`editor.bufferline`][e-sec])",
+"ui.bufferline.background" = "" # "Background of whole bufferline (see [`editor.bufferline`][e-sec])",
+"ui.cursor" = { fg = "base-100", bg = "base-600" } # "Fallback cursor style",
+
+# "ui.cursor.insert" = "" # "Insert-mode cursor (superseded by `ui.cursor.primary`)",
+
+# "ui.cursor.match" = "" # "Matching bracket, etc.",
+
+"ui.cursor.primary" = { fg = "base-100", bg = "base-500" } # "Primary cursor (the one left when a multi-cursor ends)",
+
+# "ui.cursor.select" = "" # "Select-mode cursor (superseded by `ui.cursor.primary`)",
+
+# "ui.cursorcolumn" = "" # "Fallback style for columns with cursors (see [`editor.cursorcolumn`][e-sec])",
+
+# "ui.cursorcolumn.primary" = "" # "Column of the primary cursor (see [`editor.cursorcolumn`][e-sec])",
+
+# "ui.cursorcolumn.secondary" = "" # "Column of any other cursor (see [`editor.cursorcolumn`][e-sec])",
+
+# "ui.cursorline" = "" # "Fallback style for lines with cursors (see [`editor.cursorline`][e-sec])",
+
+# "ui.cursorline.primary" = "" # "Line of the primary cursor (see [`editor.cursorline`][e-sec])",
+
+# "ui.cursorline.secondary" = "" # "Line of any other cursor (see [`editor.cursorline`][e-sec])",
+
+# "ui.gutter" = "" # "Gutters default style (see [`editor.gutters`][e-sec])",
+
+# "ui.gutter.selected" = "" # "Gutter style for lines with a cursor (see [`editor.gutters`][e-sec])",
+
+"ui.help" = { fg = "base-50", bg = "base-300" } # "Description box for commands",
+"ui.highlight" = "fuschia-500" # "Stack frame and selected lines in files in pickers",
+"ui.linenr" = "base-500" # "Line number (see [`editor.gutters`][e-sec])",
+"ui.linenr.selected" = "base-300" # "Line number for lines with a cursor (see [`editor.gutters`][e-sec] & [`editor.cursorline`][e-sec])",
+"ui.menu" = { fg = "base-100", bg = "base-700" } # "Code and command completion menus",
+"ui.menu.scroll" = { fg = "base-300", bg = "base-800" } # "`fg` sets thumb color, `bg` sets track color of scrollbar",
+"ui.menu.selected" = { fg = "base-100", bg = "fuschia-600" } # "Selected autocomplete item",
+"ui.popup" = { fg = "base-100", bg = "base-700" } # "Documentation popup (e.g. `Space + k` in defaults bindings)",
+"ui.popup.info" = { fg = "base-100", bg = "base-700" } # "Prompt for multiple key options","
+"ui.selection" = { fg = "", bg = "base-800" } # "Selections in the editing area",
+"ui.selection.primary" = { fg = "", bg = "base-700" } # "Primary selection in the editing area",
+"ui.statusline" = { fg = "base-100", bg = "base-700" } # "Default style for the statusline (see [`editor.statusline`][e-sl-sec])",
+"ui.statusline.active" = { fg = "base-100", bg = "base-700" } # "Statusline of focused document (see [`editor.statusline`][e-sl-sec])",
+"ui.statusline.inactive" = { fg = "base-300", bg = "base-800" } # "Statusline of unfocused document (see [`editor.statusline`][e-sl-sec])",
+"ui.statusline.insert" = { fg = "base-100", bg = "base-700" } # "Statusline during insert mode (see [`editor.statusline`][e-sl-sec] & [`editor.color-modes`][e-sec])",
+"ui.statusline.normal" = { fg = "base-100", bg = "base-700" } # "Statusline during normal mode (see [`editor.statusline`][e-sl-sec] & [`editor.color-modes`][e-sec])",
+"ui.statusline.select" = { fg = "base-100", bg = "base-700" } # "Statusline during select mode (see [`editor.statusline`][e-sl-sec] & [`editor.color-modes`][e-sec])",
+"ui.statusline.separator" = { fg = "", bg = "base-700" } # "Separator character in statusline (see [`editor.statusline`][e-sl-sec])",
+"ui.text" = "base-50" # "Command prompts, popup texts, etc.",
+"ui.text.focus" = "fuschia-500" # "Focused text in commands prompts, popups (e.g. selected file in a file picker)",
+"ui.text.inactive" = "base-300" # "Same as `ui.text` but when the text is inactive (e.g. suggestions)",
+"ui.text.info" = "base-50" # "Command text in `ui.popup.info` boxes",
+
+# "ui.virtual" = "" # "Fallback style for virtual text",
+
+# "ui.virtual.indent-guide" = "" # "Vertical indent width guides (see [`editor.indent-guides`][e-ig-sec])",
+
+"ui.virtual.inlay-hint" = { fg = "base-400", bg = "base-800" } # "Default style for inlay hints of all kinds",
+"ui.virtual.inlay-hint.parameter" = { fg = "base-400", bg = "base-800" } # "Style for inlay hints of kind `parameter` (LSPs are not required to set a kind)",
+
+# "ui.virtual.ruler" = "" # "Ruler columns (see [`editor.rulers`][e-sec])",
+
+# "ui.virtual.whitespace" = "" # "Visible whitespace characters (see [`editor.whitespace`][e-ws-sec])",
+
+"ui.window" = "base-700"
+
+"markup.bold" = "" # Bold markup",
+"markup.heading" = { fg = "blue-600", modifiers = ["bold"] }
+
+# "markup.heading.marker" = "" # Heading marker",
+
+# "markup.inline" = "" # Inline markup",
+
+"markup.italic" = { modifiers = ["italic"] } # Italic markup",
+
+# "markup.label" = "" # Label markup",
+
+"markup.link" = "blue-400" # Link markup",
+"markup.link.label" = "blue-400" # Link label markuo",
+"markup.link.text" = "blue-400" # Link text markup",
+"markup.link.uri" = "blue-400" # Link URI markup",
+"markup.link.url" = "blue-400" # Link URL markup",
+"markup.list" = "fuschia-600" # List markup",
+"markup.list.numbered" = "fuschia-600" # Numbered list markup",
+"markup.list.unnumbered" = "fuschia-600" # Unnumbered list markup",
+"markup.quote" = { fg = "base-50", bg = "base-700" } # Quote markup",
+"markup.raw" = "emerald-400"
+"markup.raw.block" = "" # Raw block markup",
+"markup.strikethrough" = { modifiers = [
+"strikethrough",
+] } # Strikethrough markup",
+"markup.underline" = { modifiers = ["underline"] } # Underline markup",
+
+"attribute" = "purple-400" # Class attributes, HTML tag attributes",
+"boolean" = { fg = "fuschia-500", modifiers = [
+"bold",
+] } # Config values that are booleans, e.g. in SSH config files",
+
+# "clean" = "" # Used in the `Make` language",
+
+"comment" = "gray-500" # Default comment style",
+"comment.block" = "gray-500" # Block comments",
+"comment.block.documentation" = "gray-500" # Documentation block comments",
+"comment.discard" = "gray-500" # Discarded comments", // Only used in Erlang
+"comment.documentation" = "gray-500" # Documentation comments",
+"comment.line" = "gray-500" # Line comments",
+"comment.unused" = "gray-500" # Unused comments",
+
+"constant" = "rose-400" # Default style for constants",
+"constant.builtin.boolean" = { fg = "fuschia-500", modifiers = [
+"bold",
+] } # Builtin booleans, e.g. `true`, `false` in Rust",
+
+# "constant.builtin.numeric" = "" # Builtin numeric constant",
+
+# "constant.character" = "" # Character constant, e.g. `'a'` in Rust",
+
+# "constant.character.escape" = "" # Escaped character constant",
+
+# "constant.macro" = "" # Macro constant",
+
+# "constant.numeric" = "" # Numeric constant",
+
+# "constant.numeric.float" = "" # Floating point constant",
+
+# "constant.numeric.integer" = "" # Integer constant",
+
+"constructor" = "emerald-500" # Constructor",
+
+# "diff" = "" # Default style for diffs (see [`editor.gutters`][e-sec])",
+
+# "diff.delta" = "" # 'Modified' diff",
+
+# "diff.delta.moved" = "" # 'Moved' diff",
+
+# "diff.minus" = "" # 'Removed' diff",
+
+# "diff.plus" = "" # 'Added' diff",
+
+# "embedded" = "" # Embedded",
+
+# "exception" = "" # Exception", // Used only in Lean
+
+# "field" = "" # Field", // Used only in Lean
+
+# "file" = "" # Config values that are files, e.g. in SSH config files",
+
+"function" = { fg = "blue-500", modifiers = [
+"bold",
+] } # Default style for functions",
+
+# "function.builtin" = "" # Builtin functions",
+
+# "function.call" = "" # Function call", // only used in Lua
+
+"function.macro" = { fg = "sky-400", modifiers = ["bold"] } # Macro functions",
+
+# "function.method" = "" # Methods",
+
+# "function.method.builtin" = "" # Builtin methods",
+
+# "function.special" = "" # Special functions",
+
+"identifier" = "" # Config values that are identifiers, e.g. in SSH config files",
+"include" = "" # Include", // Latex and Lean
+
+"keyword" = "fuschia-500" # Default style for keywords",
+
+# "keyword.control" = "" # Control keywords",
+
+# "keyword.control.conditional" = "" # Conditional control keywords, e.g. `if`, `else`, etc.",
+
+"keyword.control.exception" = "red-400" # Exception keywords, e.g. `try`, `raise`, etc.",
+"keyword.control.import" = "blue-400" # Import/Include keywords, e.g. `use`, `include`, etc.",
+
+# "keyword.control.repeat" = "" # Loop keywords, e.g. `for`, `while`, etc.",
+
+# "keyword.control.return" = "" # Return keywords, e.g. `return`, `yield`, etc.",
+
+# "keyword.directive" = "" # Directives, e.g. `#include`, `comptime`, etc.",
+
+# "keyword.function" = "" # Function keywords, e.g. `fn`, `function`, etc.",
+
+# "keyword.local" = "" # Local keywords",
+
+# "keyword.local.import" = "" # Local imports keywords",
+
+# "keyword.operator" = "fuschia-500" # Operator keywords, e.g. `not`, `or`, etc.",
+
+# "keyword.operator.assignment" = "" # Assignements keywords",
+
+# "keyword.other" = "" # Other keywords, without a clear category",
+
+"keyword.special" = { fg = "red-900", modifiers = [
+"bold",
+] } # Special keywords, like `unsafe` in Rust",
+
+# "keyword.storage" = "" # Default style for storage keywords",
+
+"keyword.storage.modifier" = { fg = "fuschia-800", modifiers = [
+"bold",
+] } # Storage modifier keywords, e.g. `move`, `dyn`",
+"keyword.storage.modifier.mut" = "fuschia-500" # Mutable storage modifier",
+"keyword.storage.modifier.ref" = "fuschia-500" # Reference storage modifier",
+"keyword.storage.type" = "fuschia-500" # Storage type keywords, e.g `class`, `let`",
+
+"label" = "fuschia-600"
+
+# "namespace" = "" # Namespace",
+
+# "none" = "" # Used to reset highlighting in some queries",
+
+# "number" = "" # Config values that are numbers, e.g. in SSH config files",
+
+"operator" = "sky-500" # Default style for operators",
+
+# "operator.default" = "" # Default operator (not the same as `default`)",
+
+# "operator.disjunct" = "" # Disjunct operator, e.g. `|`",
+
+# "operator.regexp" = "" # Regex operator, e.g. `!~`, `=~`, etc.",
+
+# "operator.unify" = "" # Unify operator, e.g. `&`",
+
+# "parameter" = "" # More often seen as `variable.parameter`", // Only used in C#
+
+"punctuation" = "base-200" # Default style for punctuation",
+"punctuation.bracket" = "base-200" # Brackets, e.g. `<`, `(`, `)`, etc.",
+"punctuation.definition" = "base-200" # Definition", // Only used in Svelte
+"punctuation.definition.tag" = "base-200" # Tag definition", // Only used in Svelte
+"punctuation.delimiter" = "base-200" # Delimiting punctuation, e.g. `,`, `::`",
+"punctuation.special" = "base-200" # Special punctuation, e.g. `{`, `}` in Python strings",
+
+"special" = { fg = "pink-500", modifiers = [
+"bold",
+] } # Special", // Only used in Hare
+
+"string" = "green-500" # Default style for strings",
+
+# "string.escape" = "" # Escaped string, e.g. in Markdown",
+
+# "string.regexp" = "" # Regex pattern string",
+
+# "string.special" = "" # Special string (meaning is language-specific)",
+
+# "string.special.path" = "" # Path string, used in git for example",
+
+# "string.special.symbol" = "" # Symbol string",
+
+# "string.special.uri" = "" # URI string",
+
+# "symbol" = "" # Symbol",
+
+"tag" = "blue-600" # Tag",
+"tag.error" = "red-600" # Erroneous tag, e.g. in HTML",
+
+# "text" = "" # Default style for text (unset by almost all languages)", // Only used by Ledger
+
+# "text.literal" = "" # Tetx literal (see `text`)", // Only used by Ledger
+
+# "time" = "" # Config values that are time, e.g. in SSH config files",
+
+"type" = "indigo-500" # Default style for types",
+"type.builtin" = "rose-400" # Builtin type",
+
+# "type.enum" = "" # Enum type",
+
+"type.enum.variant" = "amber-500" # Enum variant",
+
+"variable" = "base-50" # Default style for variables",
+"variable.builtin" = "red-500" # Builtin variable, e.g. `self`, `this`",
+"variable.other" = "amber-300" # See `variable.other.member`",
+"variable.other.member" = "amber-300" # Member variable",
+"variable.parameter" = "amber-300" # Parameter variable",
+
+[palette]
+base-50 = "#faf7ff"
+base-100 = "#c9bae6"
+base-200 = "#9e85cc"
+base-300 = "#7b5cb3"
+base-400 = "#5f3d99"
+base-500 = "#482780"
+base-600 = "#361866"
+base-700 = "#270e4d"
+base-800 = "#190833"
+base-900 = "#0c0319"
+
+gray-50 = "#f9fafb"
+gray-100 = "#f3f4f6"
+gray-200 = "#e5e7eb"
+gray-300 = "#d1d5db"
+gray-400 = "#9ca3af"
+gray-500 = "#6b7280"
+gray-600 = "#4b5563"
+gray-700 = "#374151"
+gray-800 = "#1f2937"
+gray-900 = "#111827"
+gray-950 = "#030712"
+
+zinc-50 = "#fafafa"
+zinc-100 = "#f4f4f5"
+zinc-200 = "#e4e4e7"
+zinc-300 = "#d4d4d8"
+zinc-400 = "#a1a1aa"
+zinc-500 = "#71717a"
+zinc-600 = "#52525b"
+zinc-700 = "#3f3f46"
+zinc-800 = "#27272a"
+zinc-900 = "#18181b"
+zinc-950 = "#09090b"
+
+neutral-50 = "#fafafa"
+neutral-100 = "#f5f5f5"
+neutral-200 = "#e5e5e5"
+neutral-300 = "#d4d4d4"
+neutral-400 = "#a3a3a3"
+neutral-500 = "#737373"
+neutral-600 = "#525252"
+neutral-700 = "#404040"
+neutral-800 = "#262626"
+neutral-900 = "#171717"
+neutral-950 = "#0a0a0a"
+
+stone-50 = "#fafaf9"
+stone-100 = "#f5f5f4"
+stone-200 = "#e7e5e4"
+stone-300 = "#d6d3d1"
+stone-400 = "#a8a29e"
+stone-500 = "#78716c"
+stone-600 = "#57534e"
+stone-700 = "#44403c"
+stone-800 = "#292524"
+stone-900 = "#1c1917"
+stone-950 = "#0c0a09"
+
+red-50 = "#fef2f2"
+red-100 = "#fee2e2"
+red-200 = "#fecaca"
+red-300 = "#fca5a5"
+red-400 = "#f87171"
+red-500 = "#ef4444"
+red-600 = "#dc2626"
+red-700 = "#b91c1c"
+red-800 = "#991b1b"
+red-900 = "#7f1d1d"
+red-950 = "#450a0a"
+
+orange-50 = "#fff7ed"
+orange-100 = "#ffedd5"
+orange-200 = "#fed7aa"
+orange-300 = "#fdba74"
+orange-400 = "#fb923c"
+orange-500 = "#f97316"
+orange-600 = "#ea580c"
+orange-700 = "#c2410c"
+orange-800 = "#9a3412"
+orange-900 = "#7c2d12"
+orange-950 = "#431407"
+
+amber-50 = "#fffbeb"
+amber-100 = "#fef3c7"
+amber-200 = "#fde68a"
+amber-300 = "#fcd34d"
+amber-400 = "#fbbf24"
+amber-500 = "#f59e0b"
+amber-600 = "#d97706"
+amber-700 = "#b45309"
+amber-800 = "#92400e"
+amber-900 = "#78350f"
+amber-950 = "#451a03"
+
+yellow-50 = "#fefce8"
+yellow-100 = "#fef9c3"
+yellow-200 = "#fef08a"
+yellow-300 = "#fde047"
+yellow-400 = "#facc15"
+yellow-500 = "#eab308"
+yellow-600 = "#ca8a04"
+yellow-700 = "#a16207"
+yellow-800 = "#854d0e"
+yellow-900 = "#713f12"
+yellow-950 = "#422006"
+
+lime-50 = "#f7fee7"
+lime-100 = "#ecfccb"
+lime-200 = "#d9f99d"
+lime-300 = "#bef264"
+lime-400 = "#a3e635"
+lime-500 = "#84cc16"
+lime-600 = "#65a30d"
+lime-700 = "#4d7c0f"
+lime-800 = "#3f6212"
+lime-900 = "#365314"
+lime-950 = "#1a2e05"
+
+green-50 = "#f0fdf4"
+green-100 = "#dcfce7"
+green-200 = "#bbf7d0"
+green-300 = "#86efac"
+green-400 = "#4ade80"
+green-500 = "#22c55e"
+green-600 = "#16a34a"
+green-700 = "#15803d"
+green-800 = "#166534"
+green-900 = "#14532d"
+green-950 = "#052e16"
+
+emerald-50 = "#ecfdf5"
+emerald-100 = "#d1fae5"
+emerald-200 = "#a7f3d0"
+emerald-300 = "#6ee7b7"
+emerald-400 = "#34d399"
+emerald-500 = "#10b981"
+emerald-600 = "#059669"
+emerald-700 = "#047857"
+emerald-800 = "#065f46"
+emerald-900 = "#064e3b"
+emerald-950 = "#022c22"
+
+teal-50 = "#f0fdfa"
+teal-100 = "#ccfbf1"
+teal-200 = "#99f6e4"
+teal-300 = "#5eead4"
+teal-400 = "#2dd4bf"
+teal-500 = "#14b8a6"
+teal-600 = "#0d9488"
+teal-700 = "#0f766e"
+teal-800 = "#115e59"
+teal-900 = "#134e4a"
+teal-950 = "#042f2e"
+
+cyan-50 = "#ecfeff"
+cyan-100 = "#cffafe"
+cyan-200 = "#a5f3fc"
+cyan-300 = "#67e8f9"
+cyan-400 = "#22d3ee"
+cyan-500 = "#06b6d4"
+cyan-600 = "#0891b2"
+cyan-700 = "#0e7490"
+cyan-800 = "#155e75"
+cyan-900 = "#164e63"
+cyan-950 = "#083344"
+
+sky-50 = "#f0f9ff"
+sky-100 = "#e0f2fe"
+sky-200 = "#bae6fd"
+sky-300 = "#7dd3fc"
+sky-400 = "#38bdf8"
+sky-500 = "#0ea5e9"
+sky-600 = "#0284c7"
+sky-700 = "#0369a1"
+sky-800 = "#075985"
+sky-900 = "#0c4a6e"
+sky-950 = "#082f49"
+
+blue-50 = "#eff6ff"
+blue-100 = "#dbeafe"
+blue-200 = "#bfdbfe"
+blue-300 = "#93c5fd"
+blue-400 = "#60a5fa"
+blue-500 = "#3b82f6"
+blue-600 = "#2563eb"
+blue-700 = "#1d4ed8"
+blue-800 = "#1e40af"
+blue-900 = "#1e3a8a"
+blue-950 = "#172554"
+
+indigo-50 = "#eef2ff"
+indigo-100 = "#e0e7ff"
+indigo-200 = "#c7d2fe"
+indigo-300 = "#a5b4fc"
+indigo-400 = "#818cf8"
+indigo-500 = "#6366f1"
+indigo-600 = "#4f46e5"
+indigo-700 = "#4338ca"
+indigo-800 = "#3730a3"
+indigo-900 = "#312e81"
+indigo-950 = "#1e1b4b"
+
+violet-50 = "#f5f3ff"
+violet-100 = "#ede9fe"
+violet-200 = "#ddd6fe"
+violet-300 = "#c4b5fd"
+violet-400 = "#a78bfa"
+violet-500 = "#8b5cf6"
+violet-600 = "#7c3aed"
+violet-700 = "#6d28d9"
+violet-800 = "#5b21b6"
+violet-900 = "#4c1d95"
+violet-950 = "#2e1065"
+
+purple-50 = "#faf5ff"
+purple-100 = "#f3e8ff"
+purple-200 = "#e9d5ff"
+purple-300 = "#d8b4fe"
+purple-400 = "#c084fc"
+purple-500 = "#a855f7"
+purple-600 = "#9333ea"
+purple-700 = "#7e22ce"
+purple-800 = "#6b21a8"
+purple-900 = "#581c87"
+purple-950 = "#3b0764"
+
+fuschia-50 = "#fdf4ff"
+fuschia-100 = "#fae8ff"
+fuschia-200 = "#f5d0fe"
+fuschia-300 = "#f0abfc"
+fuschia-400 = "#e879f9"
+fuschia-500 = "#d946ef"
+fuschia-600 = "#c026d3"
+fuschia-700 = "#a21caf"
+fuschia-800 = "#86198f"
+fuschia-900 = "#701a75"
+fuschia-950 = "#4a044e"
+
+pink-50 = "#fdf2f8"
+pink-100 = "#fce7f3"
+pink-200 = "#fbcfe8"
+pink-300 = "#f9a8d4"
+pink-400 = "#f472b6"
+pink-500 = "#ec4899"
+pink-600 = "#db2777"
+pink-700 = "#be185d"
+pink-800 = "#9d174d"
+pink-900 = "#831843"
+pink-950 = "#500724"
+
+rose-50 = "#fff1f2"
+rose-100 = "#ffe4e6"
+rose-200 = "#fecdd3"
+rose-300 = "#fda4af"
+rose-400 = "#fb7185"
+rose-500 = "#f43f5e"
+rose-600 = "#e11d48"
+rose-700 = "#be123c"
+rose-800 = "#9f1239"
+rose-900 = "#881337"
+rose-950 = "#4c0519"
